@@ -1,5 +1,21 @@
-# Vue 3 + Vite
+# Apache Log Viewer
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Этот проект отображает HTTP-запросы из лог-файла Apache через PHP-скрипт (`getLogs.php`) и показывает их на фронтенде с использованием Vue.js.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ⚙️ Установка и запуск
+
+1. Убедитесь, что у вас установлены:
+    - PHP 8.x
+    - Apache/Nginx (если нужно)
+    - Node.js и npm
+
+2. Перейдите в папку с Vue и установите зависимости:
+
+```bash
+npm install
+npm run dev
+
+## Убедитесь, что веб-сервер может обрабатывать getLogs.php. Пример URL:
+
+http://localhost/getLogs.php
+
